@@ -132,10 +132,6 @@ Add a New Project
     });
 };
 
-if (!portfolioData.projects) {
-    portfolioData.projects = [];
-}
-
     promptUser()
         .then(answers => console.log(answers))
         .then(promptProject)
