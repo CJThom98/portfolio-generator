@@ -19,7 +19,7 @@ const writeFile = fileContent => {
     });
 };
 
-const copyFile = fileContent => {
+const copyFile = () => {
     return new Promise((resolve, reject) => {
         fs.copyFile('./src/style.css', './dist/style.css', fileContent, err => {
             if (err) {
@@ -29,7 +29,7 @@ const copyFile = fileContent => {
 
             resolve({
                 ok: true,
-                message: 'File created!'
+                message: 'Stylesheet created!'
             });
         });
     });
